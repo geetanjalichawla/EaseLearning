@@ -1,7 +1,11 @@
 .container{
-    height: 100vh;
-    padding: 5rem;
+    min-height: 100vh;
+    padding: 5rem 3rem;
+    padding-bottom: 0;
     box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 
