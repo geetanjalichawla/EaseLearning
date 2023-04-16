@@ -29,8 +29,10 @@ function App() {
     e.preventDefault();
   })
   return (
-    <Router>
+    // <div style={{width:"100vw", overflowX:"hidden"}}>
+    <Router >
       <Header/>
+      
       <Routes>
         <Route path='/' element = {<Home/>}/>
         <Route path='/courses' element = {<Courses/>}/>
@@ -64,6 +66,7 @@ function App() {
 
       <Footer/>
     </Router>
+    // </div>
 
   );
 }

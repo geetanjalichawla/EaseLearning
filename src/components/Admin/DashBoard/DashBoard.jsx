@@ -36,7 +36,6 @@ const DataBox = ({ title, qty, qtyPrecentage, profit }) => (
     w={['90%', '90%', '80%', '30%']}
     boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}
     borderRadius={'lg'}
-    maxW="100vw" 
     p={'8'}
   >
     <Text>{title}</Text>
@@ -59,8 +58,7 @@ function DashBoard() {
   return (
     <Grid
       minH={'100vh'}
-      w={'100vw'}
-      boxSizing='border-box'
+      maxW={'100vw'}
       p={0}
       css={{ cursor: `url(${cursor}) , default` }}
       templateColumns={['1fr', '1fr', '1fr','4fr 1fr']}
@@ -110,8 +108,8 @@ function DashBoard() {
           <LineChart />
         </Box>
 
-        <Grid  maxW="full" templateColumns={['1fr','1fr 1fr']}>
-          <Box boxSizing='border-box'>
+        <Grid  maxW="full" templateColumns={['1fr','2fr 1fr']} >
+          <Box boxSizing='border-box' p={'8'}>
             <Heading
               textAlign={['center', 'left']}
               children={'Progess Bar'}
@@ -123,8 +121,8 @@ function DashBoard() {
             <Bar title="subscription" value={100} profit={true} />
           </Box>
 
-          <Box   boxSizing="border-box" py="8" >
-            <Heading textAlign={'center'} children="Users"
+          <Box   boxSizing="border-box" py="4" >
+            <Heading textAlign={'center'} children="users"size="md" 
             />
             <DoughnutChart/>
           </Box>
