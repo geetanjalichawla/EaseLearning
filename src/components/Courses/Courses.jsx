@@ -15,9 +15,11 @@ import { Link } from 'react-router-dom';
 const Courses = () => {
   const [keyword, setKeyword] = useState('');
   const [category, setCategory] = useState('');
+  
   const addtoPlaylistHandler = (id)=>{
-    console.log('added to playlist' + id);
+    console.log('added to playlist' + id + category);
   }
+  // if(categories === category) setKeyword("");
   const Course = ({
     views,
     title,

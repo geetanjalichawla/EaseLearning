@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Box, Button, Container, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react';
+import {  Box, Button, Container, Heading, Text, VStack } from '@chakra-ui/react';
 const Subscribe = () => {
     return (
         <Container h="90vh" p ="16">

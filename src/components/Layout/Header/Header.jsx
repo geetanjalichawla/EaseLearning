@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {ColorModeSwitcher} from '../../../ColorModeSwitcher'
 import { RiDashboardFill, RiMenu5Fill } from 'react-icons/ri';
 import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, HStack, VStack, useDisclosure } from '@chakra-ui/react';
@@ -79,7 +79,7 @@ zIndex={'overlay'} width={'12'} height={'12'} rounded={'full'} position={'fixed'
                             </HStack>
 
                             {
-                                user && user.role === "admin" &&  <Link to ='/admin/dashbord' onClick={onClose}>
+                                user && user.role === "admin" &&  <Link to ='/admin/dashboard' onClick={onClose}>
                                 <Button variant='ghost' colorScheme='purple'>
                                 <RiDashboardFill style = {{"margin":"5px"}} />
                                 </Button>

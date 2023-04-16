@@ -53,7 +53,7 @@ const Contact = () => {
             <Button my={'4'} colorScheme='yellow' type='submit'>send</Button>
             <Box my={'4'}>
               Request for a course{' '}
-            <Link to="request">
+            <Link to="/request">
             <Button my={'4'} colorScheme='yellow' variant={'link'} type='submit'>Click</Button>
                  </Link>
                  {' '}here

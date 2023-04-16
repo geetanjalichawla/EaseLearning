@@ -1,4 +1,4 @@
-import {  Box, Button, Container, HStack, Heading, Image, Stack, VStack } from '@chakra-ui/react';
+import {  Button, Container, Heading, Image, Stack, VStack } from '@chakra-ui/react';
 import React from 'react';
 import vg from '../../asests/images/hamser.png'
 import {Link} from 'react-router-dom'
@@ -17,7 +17,7 @@ const PageNotFound = () => {
                    <VStack minW={'50%'} alignItems={"center"}>
 
                          <Heading minW={'50%'} children="We are lost in study" size={['2xl', 'xl']} textAlign={'center'}/>
-                         <Link to ="/home">
+                         <Link to ="/">
                             <Button variant={'link'}  colorScheme='yellow' children="lets go back to home "/>
                          </Link>
                    </VStack>

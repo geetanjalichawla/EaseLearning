@@ -54,7 +54,7 @@ const Request = () => {
             <Button my={'4'} colorScheme='yellow' type='submit'>Request</Button>
             <Box my={'4'}>
              See available courses!{' '}
-            <Link to="request">
+            <Link to="/courses">
             <Button my={'4'} colorScheme='yellow' variant={'link'} type='submit'>Click</Button>
                  </Link>
                  {' '}here
