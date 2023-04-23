@@ -10,7 +10,6 @@ import {
 import React from 'react';
 import cursor from '../../../asests/images/cursor.png';
 import SideBar from '../SideBar';
-import {} from 'react-icons/ai';
 import { RiArrowDownLine, RiArrowUpLine } from 'react-icons/ri';
 import { DoughnutChart, LineChart } from './Chart';
 
@@ -47,7 +46,7 @@ const DataBox = ({ title, qty, qtyPrecentage, profit }) => (
         {profit ? (
           <RiArrowUpLine color="green" />
         ) : (
-          <RiArrowDownLine color="green" />
+          <RiArrowDownLine color="red" />
         )}
       </HStack>
     </HStack>
@@ -100,7 +99,7 @@ function DashBoard() {
         >
           <Heading
             textAlign={['center', 'left']}
-            children={'views Graph'}
+            children={'Views Graph'}
             pt={['8', '0']}
             ml={['0', '16']}
             

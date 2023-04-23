@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Line } from 'react-chartjs-2'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -26,7 +25,7 @@ import {
   );
   
 export function LineChart() {
-    const labels = ['abc', 'abc2' ,'abc3' , 'abc4'];
+    const labels = getLastYearMonths();
     const options = {
         plugins: {
           title: {
@@ -40,7 +39,7 @@ export function LineChart() {
         labels,
         datasets:[ {
             label:"views",
-            data: [1,2,3,4,5],
+            data: [1,2,3,4,5,6,7,8,9,10,11,12],
             borderColor: "rgba(107,70,193,0.5)",
             backgroundColor: "#6b46"
         }]
@@ -50,6 +49,43 @@ export function LineChart() {
     <Line data={data}  options={options}/>);
 }
 
+function getLastYearMonths(){
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  let label = [];
+
+
+  const currentMonTH = new Date().getMonth();
+  console.log(label);
+  const remain = 11-currentMonTH;
+  
+  for (let i = currentMonTH+1; i < 12; i++) {
+    const element = months[i];
+    label.push(element);
+  }
+  console.log(label);
+  
+  for (let i = 0; i <= currentMonTH; i++) {
+    const element = months[i];
+    label.push(element);
+  }
+  console.log(label);
+
+
+return label;
+}
 
 
 
@@ -67,7 +103,5 @@ export const DoughnutChart = ()=>{
             }]
           }
     
-      return (
-
-        <Doughnut data={data}/>);
+      return (<Doughnut data={data}/>);
     }
