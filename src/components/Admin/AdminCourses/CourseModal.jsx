@@ -2,10 +2,8 @@ import { Box, Button, Grid, Heading, Modal, ModalBody, ModalCloseButton, ModalCo
 import React from 'react'
 import {RiDeleteBin7Fill} from 'react-icons/ri'
 
-function CourseModal({isOpen , onClose,deleteButton}) {
+function CourseModal({isOpen , onClose,deleteButton,id,addLecutreHandler}) {
     const courseTitle= "react course";
-    const id = "id";
-
   return (
     <Modal isOpen={isOpen} onClose={onClose} size={'full'} >
     <ModalOverlay />
@@ -29,7 +27,7 @@ function CourseModal({isOpen , onClose,deleteButton}) {
         <Button colorScheme='blue' mr={3} onClick={onClose}>
           Close
         </Button>
-        <Button variant='ghost'>Secondary Action</Button>
+        <Button variant='ghost' onclick = {addLecutreHandler}>add a lecutre</Button>
       </ModalFooter>
     </ModalContent>
   </Modal>

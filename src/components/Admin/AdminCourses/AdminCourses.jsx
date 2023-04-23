@@ -71,7 +71,7 @@ const addLecutreHandler = (courseId , lectureId)=>{
                     </Tbody>
                   </Table>              
                 </TableContainer>
-                <CourseModal  isOpen = {isOpen} onClose= {onClose}  deleteButton = {deleteLecutreHandler} id= {"courseId"} />
+                <CourseModal  isOpen = {isOpen} onClose= {onClose}  deleteButton = {deleteLecutreHandler} id= {"courseId"} addLecutreHandler={addLecutreHandler} />
             </Box>
             <SideBar />
     </Grid>
